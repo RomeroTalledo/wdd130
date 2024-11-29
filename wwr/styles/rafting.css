@@ -70,8 +70,8 @@ header nav a:hover {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 90%; /* Box width */
-    max-width: 900px; /* Maximum width */
+    width: 90%; 
+    max-width: 1100px; 
     padding: 60px;
     text-align: left; /* Text alignment */
 }
@@ -166,19 +166,25 @@ header nav a:hover {
 }
 
 footer {
-    background-color: var(--accent1-color);
-    border-top: 10px solid var(--secondary-color);
-    text-align: center;
+    width: 100%;
     padding: 20px;
+    background-color: var(--accent1-color); /* Color de fondo del footer */
+    border-top: 10px solid var(--secondary-color);
+}
+
+.sociallinks {
+    display: flex;         /* Usamos flexbox para alinear los elementos */
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    gap: 15px;             /* Espacio entre los íconos */
 }
 
 .sociallinks a {
-    margin: 0 10px;
+    display: block;
 }
 
-sociallinks img {
-    width: 40px;
-    height: auto;
+.sociallinks img {
+    width: 30px;           /* Ajusta el tamaño de las imágenes */
+    height: auto;          /* Mantiene la relación de aspecto */
 }
 
 h1, h2, h3, h4, h5, h6 {
