@@ -1,0 +1,528 @@
+/* Variables */
+:root {
+    --primary-color: #006F8E;
+    --secondary-color: #D35C00;
+    --accent1-color: #1C4D32;
+    --accent2-color: #2F2F2F;
+}
+
+/* Body of the entire page */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+/* Header */
+.header {
+    background-color: var(--accent1-color);
+    border-bottom: 10px solid var(--secondary-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--accent1-color);
+    border-top: 10px solid var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 40px;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bungee', sans-serif;
+}
+
+
+/* Trips Design */
+/* ------------------------------------------------------------------ */
+/* Main trips*/
+
+.highlight-section .highlight-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.highlight-stats {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 900px;
+    padding: 60px;
+    text-align: left;
+}
+
+.highlight-stats h1 {
+    font-size: 28px;
+    font-family: 'Bungee', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    width: 60%;
+}
+
+.highlight-stats article {
+    color: #2F2F2F;
+    font-size: 14px;
+    line-height: 1.6;
+    width: 60%;
+}
+
+/* Trip Details */
+.trip-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0px;
+    gap: 20px;
+}
+
+.trip-details h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+    font-family: 'Bungee', sans-serif;
+    margin-bottom: 15px;
+}
+
+.trip-details h3 {
+    text-align: left;
+}
+
+.details-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.details-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: white;
+    max-width: 50%;
+    text-align: justify;
+}
+
+.details-image {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.call-to-action a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Index Desing */
+
+.home-page {
+    background-image: url("../images/contact.png"); /* Ruta de la imagen */
+    background-size: 120% 100%; /* Ajusta la imagen para que cubra todo el área del main */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Altura del main para cubrir la pantalla */
+    padding: 10px;
+} 
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.welcome h1 {
+    font-size: 32px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-family: 'Bungee', sans-serif;
+}
+
+/* Destinations Section */
+.destinations {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.destinations h2 {
+    font-size: 32px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-family: 'Bungee', sans-serif;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.image-row img {
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Contact Us Design */
+
+/* Contact Information */
+.contact-info {
+    margin: 40px;
+    text-align: center;
+}
+
+.contact-info h1 {
+    font-size: 32px;
+    color: var(--primary-color);
+    font-family: 'Bungee', sans-serif;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Google Map */
+.google-map {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.google-map iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+}
+
+/* Contact Form */
+.contact-form {
+    text-align: center;
+    margin: 40px;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+}
+
+.contact-form label {
+    font-size: 18px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.contact-form fieldset {
+    border: 2px solid #ccc; /* Borde alrededor del grupo de opciones */
+    padding: 20px; /* Espacio alrededor de las opciones */
+    margin: 0; /* Remueve el margen predeterminado */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 60%; /* Reduce el ancho del campo */
+    max-width: 400px; /* Asegura que no se haga más grande que 400px */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el cálculo del ancho */
+    margin: 0 auto; /* Centra el fieldset */
+}
+
+.contact-form .radio-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-form .radio-group label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+
+.contact-form .radio-group input[type="radio"] {
+    margin-top: 5px; /* Espacio entre el texto y el círculo */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+
+
+/* Employee Images */
+.employee-images {
+    text-align: center;
+    margin: 40px;
+}
+
+.employee {
+    display: inline-block;
+    margin: 20px;
+}
+
+.employee img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.employee p {
+    font-size: 16px;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 230px; 
+}
+
+.team-member img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; 
+}
+
+.team-member p {
+    font-size: 14px; 
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* About us Design */
+
+/* Main */
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps the image proportional while covering the area */
+}
+
+.stats {
+    position: absolute; /* Placing the box over the image */
+    top:85%; /* Vertical center */
+    left: 50%; /* Horizontal center */
+    transform: translate(-50%, -50%); /* Perfect adjustment for centering */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Box width */
+    max-width: 900px; /* Maximum width */
+    padding: 60px;
+    text-align: left; /* Text alignment */
+}
+
+.stats h1 {
+    font-size: 28px;
+    font-family: 'Bungee', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    width: 60%; /* Title takes up 60% of the space */
+}
+
+.stats article {
+    color: #2F2F2F;
+    font-size: 14px;
+    line-height: 1.6;
+    width: 60%; /* Text takes up 60% of the space */
+}
+
+.stats img {
+    width: 35%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Mantiene las proporciones de la imagen */
+    margin-left: 20px; /* Agrega un espacio entre la imagen y el texto */
+    
+}
+
+.adventure {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.adventure h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-family: 'Bungee', sans-serif;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.image-row img {
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para centrar y organizar la sección de historia */
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1200px; /* Ampliar el ancho máximo para acomodar mejor el contenido */
+    padding: 20px;
+    gap: 40px; /* Mayor espacio entre los elementos */
+}
+
+.history h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+    font-family: 'Bungee', sans-serif;
+    margin-bottom: 15px;
+}
+
+.history .content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Tres columnas: texto, imagen, texto */
+    align-items: center;
+    gap: 30px; /* Espaciado entre columnas */
+}
+
+.history .content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: white;
+    max-width: 400px; /* Ancho máximo del texto para mejor lectura */
+    text-align: justify; /* Alinear el texto de manera uniforme */
+}
+
+.history .content img {
+    max-width: 80%; /* Imagen más grande */
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto; /* Centrar la imagen */
+}
+
+
+.history p {
+    font-size: 16px;
+    line-height: 1.6;
+    
+}
+
+.history img {
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+}
